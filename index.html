@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href="http://jchiou.github.io/carousel.css" type="text/css" rel="stylesheet">
+
+	<title></title>
+
+  <style>
+.author {
+  font-style: italic;
+  color: #293d3d;
+}
+
+.category {
+  color: #75a3a3;
+}
+
+.price {
+  color: #141f1f;
+  font-weight: bold;
+}
+
+.description {
+  color:  #1f2e2e;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+  </style>
+
+
+</head>
+<body>
+
+    
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Books</a></li>
+                    <li><a href="/WebStoreHackathon/music_albums.html">Music Albums</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+  
+      <div class="row">
+        <div class="col-lg-4" id='book1'>
+          <img src=" http://ecx.images-amazon.com/images/I/41ZZ44g7nZL._SX327_BO1,204,203,200_.jpg " alt="Generic placeholder image" width="165" height="250">
+            <div id='gene' class='nonfiction'>
+              <h2>The Gene: An Intimate History</h2>
+            </div>
+              <div class='category'>
+                <p>Nonfiction</p> 
+              </div>
+                <div class='author'>
+                  <p>Siddhartha Mukherjee</p>
+                </div>
+                  <div class='price'>
+                   <p>$21.51</p>
+                  </div>
+                      <div class='description'>
+                        <p>From the Pulitzer Prize-winning, bestselling author of The Emperor of All Maladies, a magnificent history of the gene and a response to the defining question of the future: What becomes of being human when we learn to “read” and “write” our own genetic information?</p>
+                      </div>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4" id='book2'>
+          <img src="http://ecx.images-amazon.com/images/I/51ndn5GGkVL._SX331_BO1,204,203,200_.jpg " alt="Generic placeholder image" width="165" height="250">
+                        <div id='atomicWeight' class='fiction'>
+                            <h2>The Atomic Weight of Love: A Novel</h2> 
+                        </div>
+                            <div class='category'>
+                              <p>Fiction</p>
+                            </div>
+                                <div class='author'>
+                                    <p>Elizabeth J. Church</p>
+                                </div>     
+                                    <div class='price'>
+                                        <p>$16.96</p>
+                                    </div>
+                                        <div class='description'>
+                      <p>In her sweeping debut novel, Elizabeth J. Church takes us from the World War II years in Chicago to the vast sun-parched canyons of New Mexico in the 1970s as we follow the journey of a driven, spirited young woman, Meridian Wallace, whose scientific ambitions are subverted by the expectations of her era.</p>
+                                    </div>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4" id='book3'>
+          <img src="http://ecx.images-amazon.com/images/I/41fbBreX75L._SX327_BO1,204,203,200_.jpg" alt="Generic placeholder image" width="165" height="250">
+                            <div id='rosewater' class='fiction'>
+                        <h2>God Bless You, Mr. Rosewater: A Novel</h2>
+                            </div>
+                              <div class='category'>
+                                 <p>Fiction</p>
+                              </div>   
+                                  <div class='author'>
+                                      <p>Kurt Vonnegut</p> 
+                                  </div>    
+                                      <div class='price'>
+                                          <p>$10.00</p>
+                                      </div>    
+                                          <div class='description'>
+          <p>Eliot Rosewater—drunk, volunteer fireman, and President of the fabulously rich Rosewater Foundation—is about to attempt a noble experiment with human nature . . . with a little help from writer Kilgore Trout. God Bless You, Mr. Rosewater is Kurt Vonnegut’s funniest satire, an etched-in-acid portrayal of the greed, hypocrisy, and follies of the flesh we are all heir to.</p>
+                                          </div>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+<footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 RJJ Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+   
+
+</body>
+</html>
